@@ -341,7 +341,7 @@ PlayerSettings:
   openGLRequireES31AEP: 0
   openGLRequireES32: 0
   m_TemplateCustomTags:
-    DESCRIPTION: just a test
+    DESCRIPTION: 
     WEBXR_POLYFILL_CONFIG: 
   mobileMTRendering:
     Android: 1
