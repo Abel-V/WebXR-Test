@@ -12,7 +12,7 @@ public class TactileMovement : MonoBehaviour
     private Vector3 m_currentVelocity;
     private Vector3 m_previousPos;
 
-    public TextMesh textMesh;
+    //public TextMesh textMesh;
 
     void Awake()
     {
@@ -31,10 +31,10 @@ public class TactileMovement : MonoBehaviour
 
     void OnMouseUp()
     {
-        textMesh.text = "Up. Fingers = " + Input.touchCount.ToString();
+        //textMesh.text = "Up. Fingers = " + Input.touchCount.ToString(); //No entra ni aquí cuando suelto uno de los dos dedos, y al soltar el segundo ya entra directamente abajo
         if (Input.touchCount == 0) //solo si se ha soltado del todo
         {
-            textMesh.text = "UP!!. Fingers = " + Input.touchCount.ToString();
+            //textMesh.text = "UP!!. Fingers = " + Input.touchCount.ToString();
             m_rigidbody.velocity = m_currentVelocity;
             m_currentCamera = null;
         }
@@ -48,7 +48,7 @@ public class TactileMovement : MonoBehaviour
             m_rigidbody.velocity = Vector3.zero;
             m_rigidbody.MovePosition(m_currentCamera.ScreenToWorldPoint(currentScreenPoint) + m_offset);
             m_currentVelocity = (transform.position - m_previousPos) / Time.deltaTime;
-            if (Input.touchCount == 2)
+            /*if (Input.touchCount == 2) //Parte nueva: mover más lejos o más cerca
             {
                 //textMesh.text = "Two fingers detected";
                 Touch touchZero = Input.GetTouch(0);
@@ -65,6 +65,8 @@ public class TactileMovement : MonoBehaviour
 
                 transform.position += m_currentCamera.transform.forward * difference * 0.005f;
             }
+            //Funciona, pero al soltar el segundo dedo se resetea a la posicion del primero, y no consigo arreglarlo (se pegan ambos métodos de movimiento).
+             */
             m_previousPos = transform.position;
         }
     }

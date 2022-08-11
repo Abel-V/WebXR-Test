@@ -201,7 +201,6 @@ GameObject:
   - component: {fileID: 31909918}
   - component: {fileID: 31909917}
   - component: {fileID: 31909916}
-  - component: {fileID: 31909915}
   m_Layer: 0
   m_Name: Cube (3)
   m_TagString: Interactable
@@ -223,19 +222,6 @@ Transform:
   m_Father: {fileID: 1119766362}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: -0.031000001, y: 198.02899, z: 0.101}
---- !u!114 &31909915
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 31909913}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 366ada594f88a36488f57beca44acfb9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  textMesh: {fileID: 1185420986}
 --- !u!114 &31909916
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -243,7 +229,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 31909913}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0af03eecb340eb240abc88e883024e11, type: 3}
   m_Name: 
@@ -3432,7 +3418,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!102 &1185420986
 TextMesh:
   serializedVersion: 3
