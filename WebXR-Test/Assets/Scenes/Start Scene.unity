@@ -243,7 +243,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 160, y: 37.99}
+  m_SizeDelta: {x: 160, y: 50.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &204023820
 MonoBehaviour:
@@ -626,7 +626,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 160, y: 30}
+  m_SizeDelta: {x: 160, y: 52.07}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1358840655
 MonoBehaviour:
@@ -902,7 +902,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 160, y: 30}
+  m_SizeDelta: {x: 160, y: 55.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1850149376
 MonoBehaviour:
@@ -950,7 +950,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1523951577}
         m_TargetAssemblyTypeName: SceneLoader, Assembly-CSharp
-        m_MethodName: LoadZappARScene
+        m_MethodName: LoadARWTScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1240,7 +1240,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: ZappAR Image Tracking
+  m_Text: ARWT Image Tracking
 --- !u!222 &2097685895
 CanvasRenderer:
   m_ObjectHideFlags: 0

@@ -16,7 +16,7 @@ public class SceneLoader : MonoBehaviour
         SceneManager.LoadScene(2);
     }
 
-    public void LoadZappARScene()
+    public void LoadARWTScene()
     {
         SceneManager.LoadScene(3);
     }
