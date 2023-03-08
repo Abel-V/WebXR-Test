@@ -19,6 +19,7 @@ public class ModelLoader : MonoBehaviour
         {
             name = "Model"
         };
+        wrapper.transform.SetParent(modelParent.transform);
     }
     public void DownloadFile(string url)
     {
