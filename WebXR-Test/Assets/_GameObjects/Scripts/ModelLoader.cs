@@ -60,7 +60,7 @@ public class ModelLoader : MonoBehaviour
         GameObject model = Importer.LoadFromFile(path);
         model.transform.SetParent(wrapper.transform);
         //TEST
-        model.transform.localScale = new Vector3(0.1f, 0.1f, 0.1f);
+        //model.transform.localScale = new Vector3(0.1f, 0.1f, 0.1f);
     }
 
     IEnumerator GetFileRequest(string url, Action<UnityWebRequest> callback)
