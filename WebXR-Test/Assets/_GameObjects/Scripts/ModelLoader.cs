@@ -4,10 +4,12 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.Networking;
 using Siccity.GLTFUtility;
+using UnityEngine.UI;
 
 public class ModelLoader : MonoBehaviour
 {
     [SerializeField] GameObject modelParent;
+    [SerializeField] Text text;
 
     GameObject wrapper;
     string filePath;
@@ -22,7 +24,9 @@ public class ModelLoader : MonoBehaviour
         wrapper.transform.SetParent(modelParent.transform);
 
         //DownloadFile("https://webxr-vf.s3.eu-west-3.amazonaws.com/media/cell_phone/model.glb");
+        StartCoroutine(GetText());
     }
+
     public void DownloadFile(string url)
     {
         string path = GetFilePath(url);
@@ -85,4 +89,24 @@ public class ModelLoader : MonoBehaviour
             }
         }
     }
+
+    IEnumerator GetText()
+    {
+        UnityWebRequest www = UnityWebRequest.Get("https://raw.githubusercontent.com/Abel-V/WebXR-Test/master/README.txt");
+        yield return www.SendWebRequest();
+
+        if (www.result != UnityWebRequest.Result.Success)
+        {
+            Debug.Log(www.error);
+        }
+        else
+        {
+            // Show results as text
+            text.text = www.downloadHandler.text;
+            Debug.Log(www.downloadHandler.text);
+            // Or retrieve results as binary data
+            //byte[] results = www.downloadHandler.data;
+        }
+    }
+
 }
