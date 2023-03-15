@@ -20,6 +20,8 @@ public class ModelLoader : MonoBehaviour
             name = "Model"
         };
         wrapper.transform.SetParent(modelParent.transform);
+
+        //DownloadFile("https://webxr-vf.s3.eu-west-3.amazonaws.com/media/cell_phone/model.glb");
     }
     public void DownloadFile(string url)
     {
