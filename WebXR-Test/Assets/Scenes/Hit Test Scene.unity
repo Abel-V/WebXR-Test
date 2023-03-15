@@ -1763,7 +1763,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Drag\xF3n"
+  m_Text: amazon
 --- !u!222 &571630528
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2393,7 +2393,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: https://github.com/KhronosGroup/glTF-Sample-Models/raw/master/2.0/IridescenceLamp/glTF-Binary/IridescenceLamp.glb
+          m_StringArgument: https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Models/master/2.0/CesiumMan/glTF-Binary/CesiumMan.glb
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &724902324
@@ -2983,7 +2983,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: https://github.com/KhronosGroup/glTF-Sample-Models/raw/master/2.0/DragonAttenuation/glTF-Binary/DragonAttenuation.glb
+          m_StringArgument: https://webxr-vf.s3.eu-west-3.amazonaws.com/media/cell_phone/cell_phone.glb
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &920004960
@@ -3659,7 +3659,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "L\xE1mpara"
+  m_Text: glb
 --- !u!222 &1110883268
 CanvasRenderer:
   m_ObjectHideFlags: 0
