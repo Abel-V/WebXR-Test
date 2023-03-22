@@ -5,16 +5,16 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Start Scene.unity
     guid: dc3c59cd92f2ce144849bd6f94652208
-  - enabled: 1
+  - enabled: 0
     path: Assets/Samples/WebXR Interactions/0.15.0-preview/Sample Scene/Scenes/Desert.unity
     guid: 85380d4847db7b74a850284461349c36
   - enabled: 1
     path: Assets/Scenes/Hit Test Scene.unity
     guid: 8276d72de613eb344b831f98085735f1
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/ARWT test.unity
     guid: 7aff0f2aae731d9468c4823cf9036615
   m_configObjects:
