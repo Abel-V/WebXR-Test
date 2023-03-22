@@ -9,13 +9,7 @@ using UnityEngine.UI;
 public class ModelLoader : MonoBehaviour
 {
     [SerializeField] GameObject modelParent;
-    [SerializeField] Text textLeft;
-    [SerializeField] Text textRight;
-
-    //meter dinámicamente por playerprefs o similar
-    string urlModel = "https://webxr-vf.s3.eu-west-3.amazonaws.com/UNITY/Web+Resources/cell_phone.glb";
-    string urlTextLeft = "https://webxr-vf.s3.eu-west-3.amazonaws.com/UNITY/Web+Resources/textleft.txt";
-    string urlTextRight = "https://webxr-vf.s3.eu-west-3.amazonaws.com/UNITY/Web+Resources/textright.txt";
+    [SerializeField] Text text;
 
     GameObject wrapper;
     string filePath;
@@ -29,9 +23,8 @@ public class ModelLoader : MonoBehaviour
         };
         wrapper.transform.SetParent(modelParent.transform);
 
-        DownloadFile(urlModel);
-        StartCoroutine(GetText(textLeft, urlTextLeft));
-        StartCoroutine(GetText(textRight, urlTextRight));
+        //DownloadFile("https://webxr-vf.s3.eu-west-3.amazonaws.com/media/cell_phone/model.glb");
+        StartCoroutine(GetText());
     }
 
     public void DownloadFile(string url)
@@ -72,7 +65,7 @@ public class ModelLoader : MonoBehaviour
         ResetWrapper();
         GameObject model = Importer.LoadFromFile(path);
         model.transform.SetParent(wrapper.transform);
-        //TEST (ELIMINAR)
+        //TEST
         model.transform.localScale = new Vector3(0.1f, 0.1f, 0.1f);
     }
 
@@ -97,9 +90,9 @@ public class ModelLoader : MonoBehaviour
         }
     }
 
-    IEnumerator GetText(Text text, string url)
+    IEnumerator GetText()
     {
-        UnityWebRequest www = UnityWebRequest.Get(url);
+        UnityWebRequest www = UnityWebRequest.Get("https://raw.githubusercontent.com/Abel-V/WebXR-Test/master/README.txt");
         yield return www.SendWebRequest();
 
         if (www.result != UnityWebRequest.Result.Success)
