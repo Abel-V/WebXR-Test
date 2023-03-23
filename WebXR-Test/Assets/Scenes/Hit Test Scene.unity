@@ -2983,7 +2983,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: https://webxr-vf.s3.eu-west-3.amazonaws.com/media/cell_phone/cell_phone.glb
+          m_StringArgument: https://d7offuu7ctpfb.cloudfront.net/UNITY/Web+Resources/cell_phone.glb
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &920004960
